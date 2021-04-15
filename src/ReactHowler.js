@@ -46,6 +46,7 @@ class ReactHowler extends Component {
         onpause: props.onPause,
         onvolume: props.onVolume,
         onstop: props.onStop,
+        onseek: props.onSeek,
         onload: props.onLoad,
         onloaderror: props.onLoadError,
         html5: props.html5
@@ -234,6 +235,7 @@ ReactHowler.propTypes = {
   onPlay: PropTypes.func,
   onVolume: PropTypes.func,
   onStop: PropTypes.func,
+  onSeek: PropTypes.func,
   onLoad: PropTypes.func,
   onLoadError: PropTypes.func,
   html5: PropTypes.bool
@@ -252,6 +254,7 @@ ReactHowler.defaultProps = {
   onPlay: noop,
   onVolume: noop,
   onStop: noop,
+  onSeek: noop,
   onLoad: noop,
   onLoadError: noop,
   html5: false
